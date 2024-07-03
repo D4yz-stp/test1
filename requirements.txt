@@ -1,1 +1,11 @@
-python==3.11.9
+# Example requirements.txt
+
+# Specific package versions
+numpy==1.21.0
+matplotlib==3.4.2
+
+# Or a range of versions
+requests>=2.26.0, <3.0.0
+
+# Any additional packages
+beautifulsoup4
