@@ -3,11 +3,10 @@ import select
 import errno
 import sys
 import threading
-import os
 
-PORT = int(os.environ.get("PORT", 1234))
 HEADER_LENGTH = 10
-IP = "0.0.0.0"
+IP = "192.168.1.154"
+PORT = 1234
 
 my_username = input("Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
