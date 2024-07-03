@@ -10,7 +10,7 @@ PORT = 1234
 
 my_username = input("Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect((IP, PORT))
+client_socket.connect((socket.gethostname(), PORT))
 client_socket.setblocking(False)
 
 username = my_username.encode("utf-8")
