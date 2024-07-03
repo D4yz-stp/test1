@@ -2,14 +2,14 @@ import socket
 import select
 
 HEADER_LENGTH = 10
-IP = "192.168.1.154"
+IP = "176.79.140.140"
 PORT = 1234
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_socket.bind((IP, PORT))
 server_socket.listen()
-
+1
 sockets_list = [server_socket]
 clients = {}
 
