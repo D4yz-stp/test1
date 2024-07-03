@@ -1,9 +1,10 @@
 import socket
 import select
+import os
 
+PORT = int(os.environ.get("PORT", 1234))
 HEADER_LENGTH = 10
 IP = "0.0.0.0"
-PORT = 1234
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
